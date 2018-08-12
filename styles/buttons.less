@@ -6,20 +6,23 @@
 
 
 .btn {
-  color: lighten(@text-color, 6%);
+  color: @p8-indigo;
   background-color: @button-background-color;
   &:hover,
   &:focus {
-    color: @text-color-highlight;
-    background-color: @button-background-color-hover;
+    color: @p8-red;
+    background-color: @button-background-color;
   }
-  &:active {
-    color: fade(@text-color-selected, 66%);
-    background-color: darken(@button-background-color, 2%);
-  }
+//  &:active {
+//    color: @p8-dark-purple;
+//    background-color: @p8-dark-gray;
+//  }
   &.selected {
-    color: @text-color-selected;
+    color: @p8-pink;
     background-color: @button-background-color-selected;
+    &:hover {
+      color: @p8-red;
+    }
   }
   &:focus,
   &:focus:active {

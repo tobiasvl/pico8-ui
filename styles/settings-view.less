@@ -1,0 +1,54 @@
+.settings-view {
+  .package-card {
+    background-color: @p8-indigo;
+    &:hover {
+      background-color: @p8-dark-purple;
+    }
+    //// TODO The following should work but gives an error
+    //// GET https://atom.io/api/packages/pico8-ui 404 (Not Found)
+    //.meta-controls .install-button.is-installing {
+    //  &:before {
+    //    url("atom://pico8-ui/img/pico-8-spinner-128.gif");
+    //  }
+    //}
+  }
+
+  select.form-control {
+    background-color: @p8-light-gray;
+    color: @p8-dark-gray;
+
+    &:hover, &:focus {
+      background-color: @p8-light-gray;
+      color: @p8-dark-gray;
+    }
+  }
+
+  .package-readme a, .link {
+    color: @p8-blue;
+  }
+
+  .config-menu {
+    padding-left: 2px;
+    background-color: @p8-dark-gray;
+    border-right: 1px solid @p8-black;
+
+    .nav > li {
+      &> a {
+        color: @p8-indigo;
+        background-color: @p8-light-gray;
+        margin-bottom: 1px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &.active > a {
+        background-color: @p8-white;
+        color: @p8-indigo;
+      }
+      &> a:hover {
+        background-color: @p8-white;
+        color: @p8-pink;
+      }
+    }
+  }
+}

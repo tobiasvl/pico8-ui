@@ -1,14 +1,14 @@
 {
-  "name": "ui-theme-template",
+  "name": "pico8-ui",
   "theme": "ui",
   "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "description": "PICO-8 UI theme",
   "keywords": [
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
   "license": "MIT",
+  "repository": "https://github.com/tobiasvl/pico8-ui",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }

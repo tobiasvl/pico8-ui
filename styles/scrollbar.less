@@ -1,0 +1,52 @@
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+
+  &-track-piece {
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    &:horizontal:hover, &:vertical:hover {
+      background-color: @p8-dark-purple;
+    }
+  }
+
+  &-thumb {
+    background-color: @p8-pink;
+    border: 0px;
+    border-radius: 0px;
+    &:horizontal:hover, &:vertical:hover {
+      background-color: @p8-indigo;
+    }
+    &:horizontal:active, &:vertical:active {
+      background-color: @p8-dark-purple;
+    }
+  }
+
+  &-button {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+    width: 15px;
+    &:vertical:decrement {
+      background-image: url("atom://pico8-ui/img/up.png");
+    }
+    &:vertical:increment {
+      background-image: url("atom://pico8-ui/img/down.png");
+    }
+    &:horizontal:decrement {
+      background-image: url("atom://pico8-ui/img/left.png");
+    }
+    &:horizontal:increment {
+      background-image: url("atom://pico8-ui/img/down.png");
+    }
+    &:increment:start, &:decrement:end {
+      display: none;
+    }
+  }
+
+  &-corner {
+    display: none;
+  }
+}

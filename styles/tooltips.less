@@ -7,6 +7,8 @@
 
 .tooltip {
   .tooltip-inner {
+    background-color: @p8-red;
+    color: @p8-peach;
     line-height: 1;
     padding: .75em;
     white-space: nowrap;
@@ -19,5 +21,18 @@
     border-radius: max(2px, @component-border-radius / 2);
     color: @text-color-selected;
     background: @background-color-selected;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: @p8-red;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @p8-red;
+  }
+  &.top .tooltip-arrow {
+    border-top-color: @p8-red;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: @p8-red;
   }
 }

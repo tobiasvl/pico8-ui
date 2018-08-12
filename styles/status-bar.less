@@ -1,4 +1,3 @@
-
 // Status Bar
 // -------------------
 
@@ -7,8 +6,16 @@
 // Overrides: atom/status-bar
 
 .status-bar {
+  font-weight: bold;
   font-size: @font-size;
-  color: @text-color;
-  border-top: 1px solid @base-border-color;
-  background-color: @tree-view-background-color;
+  color: @p8-dark-purple;
+  background-color: @p8-red;
+
+  a {
+    color: @p8-dark-purple;
+
+    &:hover {
+      color: @p8-peach;
+    }
+  }
 }
