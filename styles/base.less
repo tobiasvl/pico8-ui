@@ -62,3 +62,11 @@ atom-pane {
 atom-notifications atom-notification.fatal a {
   color: @p8-dark-purple;
 }
+
+.icon-hourglass::before, .loading-message::before {
+  width: 16px;
+  height: 16px;
+  background: url("atom://pico8-ui/img/pico-8-spinner-128.gif") center no-repeat;
+  background-size: 16px 16px;
+  content: "";
+}
