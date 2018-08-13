@@ -29,8 +29,29 @@ atom-pane {
   }
 }
 
-.atom-dock-resize-handle {
-  background-color: @p8-red;
+.atom-dock {
+  &-toggle-button &-toggle-button-inner {
+    background-color: @p8-red;
+  }
+  &-resize-handle {
+    background-color: @p8-red;
+  }
+}
+
+.icon-chevron-up::before {
+  content: "\f0aa";
+}
+
+.icon-chevron-down::before {
+  content: "\f05b";
+}
+
+.icon-chevron-left::before {
+  content: "\f044";
+}
+
+.icon-chevron-right::before {
+  content: "\f05a";
 }
 
 .terminal-pane {
