@@ -8,7 +8,7 @@
     "theme"
   ],
   "license": "MIT",
-  "repository": "https://github.com/tobiasvl/pico-8-ui",
+  "repository": "https://github.com/tobiasvl/pico8-ui",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
